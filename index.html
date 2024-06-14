@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Durrel Ganados</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Durrel Ganados. This page covers the basics of dynamic web development including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Durrel Ganados">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <h1 >WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/durrelganados/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41" target="_blank">Favorite Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card first-section">
+            <h2>About Me</h2>         
+            <div class="content-wrapper">
+                <img src="images/mypic.jpg" alt="Image for section 1">
+                <div class="text-content">
+                    <p>My name is Durrel, and I'm from the Philippines. Currently, I work as an Image Labeler while simultaneously undergoing training as a Data Analyst, which has significantly improved my programming skills. I'm deeply drawn to the challenges of programming; there's a profound satisfaction in overcoming them that keeps me engaged.</p>
+                    <p>*Three years ago, I pursued training in Web Development where I gained proficiency in Bootstrap, Reactjs, Node.js, and MongoDB. Although I've created several websites during this time, they are unfortunately no longer maintained, resulting in potential errors when accessing the links.</p>
+                </div>
+            </div>
+        </section>
+        <div class="section-container">
+            <section class="card second-section">
+                <h2>Web Dev Resources</h2>           
+                <p>Here are some useful resources:</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+                    <li><a href="https://chatgpt.com/" target="_blank">ChatGPT</a></li>
+                </ul>
+            </section>
+            <section class="card third-section">
+                <h2>My Previous Projects</h2>
+                <p>*Links to my previous projects:</p>
+                <ul>
+                    <li><a href="https://dmganados.github.io/bootstrap_activity/" target="_blank">Bootstrap Activity</a></li>
+                    <li><a href="https://6ab3b376ac5f-shared.lowcodeunit.com/" target="_blank">Capstone Project</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Durrel Ganados - Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // JavaScript to dynamically populate the current year
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+    
+        // JavaScript to dynamically populate the last modified date
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+</html>
