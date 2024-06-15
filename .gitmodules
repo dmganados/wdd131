@@ -1,0 +1,3 @@
+[submodule "week01"]
+    path = week01
+    url = https://github.com/dmganados/week01-repo.git
