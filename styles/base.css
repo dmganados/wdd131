@@ -131,6 +131,16 @@ main {
     color: #BC6C25; /* Brown */
 }
 
+.sec1_paragraph_1 {
+    margin-bottom: 20px;
+}
+
+.flag {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
 /* Footer styles */
 footer {
     background: #283618; /* Dark green */
