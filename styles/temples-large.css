@@ -26,6 +26,19 @@
         margin-bottom: 1em; /* Add margin between rows */
     }
 
+    figure img {
+        width: 100%; /* Set the width to fill the figure container */
+        height: auto; /* Maintain aspect ratio */
+        border: 2px solid #457b9d;
+        border-radius: 8px;
+    }
+
+    figcaption {
+        background-color: #a8dadc;
+        padding: 0.5em;
+        border-radius: 0 0 8px 8px;
+    }
+
     footer {
         text-align: center;
     }
