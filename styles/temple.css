@@ -80,6 +80,8 @@ h2 {
 figure {
     margin: 1em 0; /* Add margin to separate the figures */
     text-align: center;
+    background-color: #f0f0f0; /* Placeholder background */
+    min-height: 200px;
 }
 
 figure img {
