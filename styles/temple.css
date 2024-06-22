@@ -1,12 +1,9 @@
-/* General styles for all screen sizes */
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background-color: #f1faee;
-    min-height: 100vh; /* Ensure body has a minimum height to reduce layout shift */
 }
 
 header {
@@ -18,9 +15,8 @@ header {
 }
 
 header h1 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-size: 2.5em; /* Fixed font size to prevent shifts */
 }
 
 nav {
@@ -73,7 +69,6 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Center the h2 */
-    min-height: 70vh; /* Ensure main has a minimum height to reduce layout shift */
 }
 
 h2 {
@@ -85,9 +80,6 @@ h2 {
 figure {
     margin: 1em 0; /* Add margin to separate the figures */
     text-align: center;
-    background-color: #f0f0f0; /* Placeholder background */
-    min-height: 200px; /* Placeholder height */
-    position: relative; /* Prevent content shift inside figure */
 }
 
 figure img {
@@ -95,8 +87,6 @@ figure img {
     height: auto;
     border: 2px solid #457b9d;
     border-radius: 8px;
-    width: 300px; /* Ensure images have fixed dimensions */
-    height: 200px; /* Ensure images have fixed dimensions */
 }
 
 figcaption {
@@ -110,8 +100,6 @@ footer {
     color: white;
     padding: 1em;
     text-align: center;
-    position: relative;
-    min-height: 50px; /* Ensure footer has a minimum height to reduce layout shift */
 }
 
 @media (max-width: 600px) {
