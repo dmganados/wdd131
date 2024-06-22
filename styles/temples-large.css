@@ -1,3 +1,5 @@
+/* Styles for larger screens (min-width: 600px) */
+
 @media (min-width: 600px) {
     nav ul {
         flex-direction: row;
@@ -24,6 +26,7 @@
     figure {
         width: calc(33.33% - 1em); /* Adjust to fit three figures per row */
         margin-bottom: 1em; /* Add margin between rows */
+        min-height: 200px; /* Placeholder height */
     }
 
     figure img {
@@ -41,5 +44,6 @@
 
     footer {
         text-align: center;
+        min-height: 50px; /* Ensure footer has a minimum height to reduce layout shift */
     }
 }

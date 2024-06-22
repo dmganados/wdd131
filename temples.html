@@ -6,17 +6,24 @@
     <meta name="description" content="Create a picture album page that is responsive in small and larger views.">
     <meta name="author" content="Durrel Ganados">
     <title>Temple Album</title>
-    <!-- Preload fonts -->
+    
+    <!-- Preload Google Fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap"></noscript>
-
-    <!-- Defer non-critical CSS -->
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <!-- Async CSS Loading -->
     <link rel="preload" href="styles/temple.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/temple.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="styles/temple.css">
+    </noscript>
+    
     <link rel="preload" href="styles/temples-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/temples-large.css"></noscript>
-
-    <!-- Defer scripts -->
+    <noscript>
+        <link rel="stylesheet" href="styles/temples-large.css">
+    </noscript>
+    
     <script defer src="scripts/temples.js"></script>
 </head>
 <body>
