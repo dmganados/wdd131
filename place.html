@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="The country or place I live.">
+    <meta name="author" content="Durrel Ganados">
+    <title>My Country</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>The Philippines</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/elnido-hero-large.webp" media="min-width: 1000px" alt="El Nido Palawan">
+            <source srcset="images/mayon-hero-medium.webp" media="min-width: 500px" alt="Mayon Volcano">
+            <img src="images/tarsier-hero-small.webp" alt="Tarsier">
+
+        </picture>
+        <section>
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 300,000 square kilometers (115,831 square miles)</li>
+                <li><strong>Population:</strong> Approximately 113 million (as of 2023)</li>
+                <li><strong>Capital:</strong> Manila</li>
+                <li><strong>Languages:</strong> Filipino (based on Tagalog) and English are the official languages. There are also numerous regional languages such as Cebuano, Ilocano, Hiligaynon, and others.</li>
+                <li><strong>Currency:</strong> Philippine Peso (PHP)</li>
+                <li><strong>Time Zone:</strong> Philippine Time (PHT), UTC +8</li>
+                <li><strong>Calling Code:</strong> +63</li>
+                <li><strong>Internet TLD:</strong> .ph</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
+            <ul>
+                <li><strong>Temperature:</strong> Average temperature ranges from 25°C to 32°C (77°F to 90°F).</li>
+                <li><strong>Conditions:</strong> The climate is divided into three seasons: Tag-init or Tag-araw (hot dry season) from March to May, Tag-ulan (rainy season) from June to November, and Tag-lamig (cool dry season) from December to February.</li>
+                <li><strong>Wind:</strong> Winds are usually light to moderate, influenced by the northeast monsoon (Amihan) from November to April and the southwest monsoon (Habagat) from May to October.</li>
+                <li><strong>Wind Chill:</strong> Generally not a concern in the tropical climate of the Philippines.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Durrel Ganados - Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
