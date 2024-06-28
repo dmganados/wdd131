@@ -1,0 +1,71 @@
+/* Base styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E8E6;
+    color: #080708;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #3772FF;
+    color: #E6E8E6;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #E6E8E6;
+    text-align: center;
+}
+
+picture img {
+    padding: 1rem 0;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #DF2935;
+}
+
+section ul {
+    list-style-type: none;
+    /* padding-left: 0; */
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: .9rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #3772FF;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #E6E8E6;
+}
+
+.weather-icon {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+}
