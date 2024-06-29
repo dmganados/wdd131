@@ -1,71 +1,76 @@
-/* Base styles */
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #E6E8E6;
-    color: #080708;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-/* Header styles */
 header {
-    background: #3772FF;
-    color: #E6E8E6;
-    padding: 1rem 0;
     text-align: center;
+    background-color: #086788;
+    color: #F0C808;
+    padding: 1em;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-/* Main content */
 main {
-    max-width: 600px;
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: #E6E8E6;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+picture {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 picture img {
-    padding: 1rem 0;
-}
-
-section h2 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #DF2935;
-}
-
-section ul {
-    list-style-type: none;
-    /* padding-left: 0; */
-}
-
-section ul li {
-    margin-bottom: 10px;
-    font-size: .9rem;
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    background-color: #3772FF;
-    text-align: center;
-    padding: 10px;
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-footer p {
-    font-size: 0.8rem;
-    color: #E6E8E6;
+.data, .weather {
+    width: 90%;
+    max-width: 800px;
+    margin: 1em 0;
+}
+
+h2 {
+    text-align: center;
+    color: #DD1C1A;
+    border-bottom: 1px solid #F0C808;
+    padding-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
+    font-size: 1rem;
 }
 
 .weather-icon {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    width: 50px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: .9rem;
+    background-color: #086788;
+    color: #FFF1D0;
+}
+
+@media (max-width: 599px) {
+    .weather .weather-icon-large {
+        display: none; 
+    }
 }

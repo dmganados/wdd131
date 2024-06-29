@@ -1,0 +1,56 @@
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    picture {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        margin: 1em 0;
+    }
+
+    picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    header {
+        text-align: center;
+        background-color: #086788;
+        color: #F0C808;
+        padding: 1em;
+        margin-bottom: 1em; /* Add margin bottom to header on large screens */
+    }
+
+    .data, .weather {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 1em;
+        border-radius: 8px;
+        width: 20rem;
+    }
+
+    .data {
+        top: 25%;
+        left: 3%;
+    }
+    .weather {
+        top: 60%;
+        right: 3%;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    footer {
+        /* padding: 1em; */
+        text-align: center;
+    }
+}
