@@ -1,22 +1,32 @@
+:root {
+    --main-bg-color: #E5E5E5;
+    --main-text-color: #000000;
+    --accent-color: #FCA311;
+    --light-bg-color: #14213D;
+    --light-text-color: #FFFFFF;
+    --padding: 1em;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--main-bg-color);
 }
 
 header {
     text-align: center;
-    background-color: #086788;
-    color: #FFF1D0;
-    padding: 1em;
+    background-color: var(--light-bg-color);
+    color: var(--light-text-color);
+    padding: var(--padding);
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
+    padding: var(--padding);
 }
 
 picture {
@@ -39,8 +49,8 @@ picture img {
 
 h2 {
     text-align: center;
-    color: #DD1C1A;
-    border-bottom: 1px solid #F0C808;
+    color: var( --light-bg-color);
+    border-bottom: 1px solid var(--accent-color);
     padding-bottom: 0.5em;
 }
 
@@ -65,8 +75,8 @@ footer {
     text-align: center;
     padding: 1em;
     font-size: 1rem;
-    background-color: #086788;
-    color: #FFF1D0;
+    background-color: var(--light-bg-color);
+    color: var(--light-text-color);
     min-height: 50px;
 }
 
