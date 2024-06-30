@@ -23,7 +23,7 @@
     header {
         text-align: center;
         background-color: #086788;
-        color: #F0C808;
+        color: #FFF1D0;
         padding: 1em;
         margin-bottom: 1em; /* Add margin bottom to header on large screens */
     }
@@ -50,7 +50,6 @@
     }
 
     footer {
-        /* padding: 1em; */
         text-align: center;
     }
 }
