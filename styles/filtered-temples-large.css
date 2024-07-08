@@ -4,7 +4,7 @@
     nav ul {
         flex-direction: row;
         justify-content: center;
-        display: flex !important; /* Ensure nav is always visible */
+        display: flex !important; 
     }
 
     nav ul li {
@@ -14,7 +14,7 @@
 
     main {
         max-width: 1000px;
-        text-align: center; /* Ensure the h2 is centered */
+        text-align: center; 
     }
 
     .gallery {
@@ -30,20 +30,9 @@
     }
 
     figure img {
-        width: 100%; /* Set the width to fill the figure container */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
         border: 2px solid #457b9d;
         border-radius: 8px;
     }
-
-    /* figcaption {
-        background-color: #a8dadc;
-        padding: 0.5em;
-        border-radius: 0 0 8px 8px;
-    } */
-
-    /* footer {
-        text-align: center;
-        min-height: 50px; 
-    } */
 }

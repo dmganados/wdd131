@@ -91,8 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
             area: 14477,
             imageUrl: "https://www.churchofjesuschrist.org/imgs/3aedbae4240b4c09f5286429c9e6303f530a665d/full/320%2C/0/default"
         }
-
-        // Add more temple objects here...
       ];
 
     //   funtions to generate temple cards
@@ -130,9 +128,11 @@ document.addEventListener('DOMContentLoaded', function() {
             figure.appendChild(figcaption);
             gallery.appendChild(figure);
         });    
-    }
 
-    generateTempleCards('all');
+        // Page header (h2) will change according to the navigation selected
+        const mainHeading = document.querySelector('main h2');
+        mainHeading.textContent = filter.charAt(0).toUpperCase() + filter.slice(1);
+    }
 
     // Filter event listener
     document.getElementById('nav-menu').addEventListener('click', (event) => {
@@ -142,6 +142,8 @@ document.addEventListener('DOMContentLoaded', function() {
             generateTempleCards(filter);
         }
     });
+
+    generateTempleCards('home');
 
     // Update the footer with the current year
     const currentYear = new Date().getFullYear();
@@ -158,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function () {
         navMenu.classList.toggle('show');
         hamburger.textContent = hamburger.textContent === '✖' ? '☰' : '✖';
-    });
+    });    
   });
 
 
