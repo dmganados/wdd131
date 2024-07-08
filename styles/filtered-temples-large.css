@@ -42,8 +42,8 @@
         border-radius: 0 0 8px 8px;
     } */
 
-    footer {
+    /* footer {
         text-align: center;
-        min-height: 50px; /* Ensure footer has a minimum height to reduce layout shift */
-    }
+        min-height: 50px; 
+    } */
 }

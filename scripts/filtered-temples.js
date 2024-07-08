@@ -64,11 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
             imageUrl: "https://www.churchofjesuschrist.org/imgs/1b2c438fbf03dce153643292f31889fcc54dd95a/full/320%2C/0/default"
         },
         {
-            templeName: "Accra Ghana",
-            location: "Accra, Ghana",
-            dedicated: "2004, January, 11",
-            area: 17000,
-            imageUrl: "https://www.churchofjesuschrist.org/imgs/7cf8e8b9e5a5a1f379d4e2c9bc2166f9c6007aca/full/320%2C/0/default"
+            templeName: "Aba Nigeria",
+            location: "Aba, Nigeria",
+            dedicated: "2005, August, 7",
+            area: 11500,
+            imageUrl: "https://www.churchofjesuschrist.org/imgs/7210c09be95c4474772ae52e5f31c23c08112784/full/320%2C/0/default"
         },
         {
             templeName: "Manila Philippines",
@@ -85,11 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
             imageUrl: "https://www.churchofjesuschrist.org/imgs/7873102ba98c0c2b6f45ca655d737cf5a5e7f7c2/full/320%2C/0/default"
         },
         {
-            templeName: "Seoul South Korea",
-            location: "Seoul, South Korea",
-            dedicated: "1985, December, 14-15",
-            area: 28057,
-            imageUrl: "https://www.churchofjesuschrist.org/imgs/57efcc4b6a1c664c934aa672b0f8de38a8f539c4/full/320%2C/0/default"
+            templeName: "Hague Netherlands",
+            location: "Zoetermeer, Netherlands",
+            dedicated: "2002, September, 8",
+            area: 14477,
+            imageUrl: "https://www.churchofjesuschrist.org/imgs/3aedbae4240b4c09f5286429c9e6303f530a665d/full/320%2C/0/default"
         }
 
         // Add more temple objects here...

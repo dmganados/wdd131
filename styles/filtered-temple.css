@@ -4,12 +4,15 @@ body {
     padding: 0;
     line-height: 1.6;
     background-color: #f1faee;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
+
 
 header {
     background-color: #1d3557;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
     position: relative;
 }
@@ -17,10 +20,13 @@ header {
 header h1 {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    font-size: 2em;
+    /* line-height: 1.2; */
+    /* min-height: 2.4em; */
 }
 
 nav {
-    margin-top: 1em;  /* Ensure the nav menu is below the header */
+    margin-top: 1em;  
 }
 
 .hamburger {
@@ -52,7 +58,6 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 0.5em 1em;
-    background-color: #457b9d;
     transition: background-color 0.3s ease;
     border-radius: 5px;
 }
@@ -72,34 +77,50 @@ main {
 }
 
 h2 {
-    margin-top: 0; /* Optional: reduce margin for better spacing */
+    margin-top: 0; 
     font-size: 2em;
     color: #1d3557;
 }
 
 figure {
-    margin: 1em 0; /* Add margin to separate the figures */
+    margin: 1em 0; 
+    background-color: #F1FAEE;
+    padding: 1em;
+    display: block;
+    box-sizing: border-box;
     text-align: center;
 }
 
 figure img {
     max-width: 100%;
     height: auto;
-    border: 2px solid #457b9d;
+    /* height: 200px; */
+    object-fit: cover;
+    /* border: 2px solid #457b9d; */
     border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
 
 figcaption {
-    background-color: #a8dadc;
     padding: 0.5em;
     border-radius: 0 0 8px 8px;
+    font-size: medium;
+    background-color: #F1FAEE;
+    min-height: 1em;
 }
+
+/* * {
+    box-sizing: border-box;
+} */
 
 footer {
     background-color: #1d3557;
     color: white;
-    padding: 1em;
+    padding-bottom: 1em;
     text-align: center;
+    font-size: small;
+    min-height: 50px;
 }
 
 @media (max-width: 600px) {
