@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="To create a product review form with counter of reviews.">
+    
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review Form</h1>
+        <form id="reviewForm" action="review.html" method="get">
+            <label for="productName">Product Name:</label>
+            <select name="productName" id="productName" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <label>Overall Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5" title="5 stars">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4" title="4 stars">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3" title="3 stars">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2" title="2 stars">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1" title="1 star">&#9733;</label>
+            </div>
+
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" name="installationDate" id="installationDate" required>
+
+            <label>Which feature did you find useful in the product? (Check all that apply)</label>
+            <div class="checkbox-group">
+                <ul>
+                    <li class="feature-item">
+                        <input type="checkbox" id="feature1" name="durability" value="yes">
+                        <label for="feature1">Durability</label>
+                    </li>
+                    <li class="feature-item">
+                        <input type="checkbox" id="feature2" name="use" value="yes">
+                        <label for="feature2">Ease of Use</label>
+                    </li>
+                    <li class="feature-item">
+                        <input type="checkbox" id="feature3" name="performance" value="yes">
+                        <label for="feature3">Performance</label>
+                    </li>
+                    <li class="feature-item">
+                        <input type="checkbox" id="feature4" name="design" value="yes">
+                        <label for="feature4">Design</label>
+                    </li>
+                </ul>
+            </div>
+
+            <label for="review">Written Review:</label>
+            <textarea name="review" id="review"></textarea>
+
+            <label for="userName">User Name:</label>
+            <input type="text" name="userName" id="userName">
+
+            <input type="submit" value="Submit Review">            
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Durrel Ganados - Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
