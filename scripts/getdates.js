@@ -1,5 +1,9 @@
 // JavaScript to dynamically populate the current year
-document.getElementById('currentyear').textContent = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+});
 
 // JavaScript to dynamically populate the last modified date
-document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+});
